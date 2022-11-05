@@ -20,11 +20,8 @@ pdffileobj=open('src/345syllabus.pdf','rb')
 #create reader variable that will read the pdffileobj
 pdfreader=PyPDF2.PdfFileReader(pdffileobj)
  
-#This will store the number of pages of this pdf file
-x=pdfreader.numPages
- 
-#create a variable that will select the selected number of pages
-pageobj=pdfreader.getPage(x+1)
+# Store Pdf with convert_from_path function
+images = convert_from_path('345syllabus.pdf')
  
 #(x+1) because python indentation starts with 0.
 #create text variable which will store all text datafrom pdf file
