@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
+    "appwrite": "^10.1.0",
     "node": "^19.0.1",
     "pdf2json": "^3.0.0"
   }
