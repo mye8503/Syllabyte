@@ -1,12 +1,40 @@
+# PDFTOPPMPATH = r"poppler\poppler-0.68.0\bin\pdftoppm.exe"
+# PDFFILE = "345syllabus.pdf"
 
-# import module
-from pdf2image import convert_from_path
+# import subprocess
+# subprocess.Popen('"%s" -png "%s" out' % (PDFTOPPMPATH, PDFFILE))
+
+# print("done")
+import sys
+
+sys.path
+sys.executable
+
+
+# import PyPDF2
  
+#create file object variable
+#opening method will be rb
+pdffileobj=open('src/345syllabus.pdf','rb')
  
-# Store Pdf with convert_from_path function
-images = convert_from_path('345syllabus.pdf')
+#create reader variable that will read the pdffileobj
+pdfreader=PyPDF2.PdfFileReader(pdffileobj)
  
-for i in range(len(images)):
-   
-      # Save pages as images in the pdf
-    images[i].save('page'+ str(i) +'.jpg', 'JPEG')
+#This will store the number of pages of this pdf file
+x=pdfreader.numPages
+ 
+#create a variable that will select the selected number of pages
+pageobj=pdfreader.getPage(x+1)
+ 
+#(x+1) because python indentation starts with 0.
+#create text variable which will store all text datafrom pdf file
+text=pageobj.extractText()
+ 
+#save the extracted data from pdf to a txt file
+#we will use file handling here
+#dont forget to put r before you put the file path
+#go to the file location copy the path by right clicking on the file
+#click properties and copy the location path and paste it here.
+#put "\\your_txtfilename"
+file1=open(r"C:\Users\SIDDHI\AppData\Local\Programs\Python\Python38\\1.txt","a")
+file1.writelines(text)
