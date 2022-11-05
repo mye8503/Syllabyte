@@ -1,0 +1,36 @@
+[33mcommit 9c8b2fd6540355669f64fffe7f4d313707b6079b[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: mye8503 <mye8503@gmail.com>
+Date:   Sat Nov 5 17:31:01 2022 -0400
+
+    attempted pdf2image
+
+[33mcommit 55cb206102b72bd455201be379bc905422347201[m
+Author: Harshit Sohaney <harshit.sohaney@mail.utoronto.ca>
+Date:   Sat Nov 5 17:22:02 2022 -0400
+
+    Added packages
+
+[33mcommit 8a5d28aa31b7c196ed0b4ea0a969f6584f14594f[m
+Merge: 9c93c15 ad6f25f
+Author: Harshit Sohaney <harshit.sohaney@mail.utoronto.ca>
+Date:   Sat Nov 5 14:28:33 2022 -0400
+
+    Merge branch 'main' of https://github.com/mye8503/NewHacks-2022
+
+[33mcommit 9c93c151a734bd43efdbdfde4be5c1aacfaae673[m
+Author: Harshit Sohaney <harshit.sohaney@mail.utoronto.ca>
+Date:   Sat Nov 5 14:28:28 2022 -0400
+
+    read pdf to json, might want to convert to txt instead, json is unreadable
+
+[33mcommit ad6f25f69de070ca669987f9f52b6ddd72b8b1ef[m
+Author: SagarikaR <86086592+Sagarika2870@users.noreply.github.com>
+Date:   Sat Nov 5 13:00:07 2022 -0400
+
+    Create react app
+
+[33mcommit df60177a549595301d7b152e726907edb23ee96e[m
+Author: mye8503 <mye8503@gmail.com>
+Date:   Sat Nov 5 11:47:21 2022 -0400
+
+    Initial commit
