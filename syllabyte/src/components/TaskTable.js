@@ -42,11 +42,11 @@ export function TaskTable({state}) {
     assignment: "Quiz 2",
     dueIn: "5 days",
     state: 1
-  },]);
+  }]);
 
   return (
-    {
-      assignmentInfo.filter(task => task.state == 1).map(info => (
+    
+      assignmentInfo.filter(task => task.state === 1).map(info => (
         <React.Fragment>
           <Grid item xs={12}>
             <Item>info.assingment + " " + info.course + " " + info.dueIn</Item>
@@ -56,7 +56,7 @@ export function TaskTable({state}) {
         
         
       )
-    }
+    
 
   )}
 
