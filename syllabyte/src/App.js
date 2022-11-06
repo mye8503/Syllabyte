@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import CourseAndUpload from './components/CourseAndUpload';
+import { TaskTable } from './components/TaskTable';
 
-course_info = {
+const course_info = {
   'APS360': {
       'priority': 1,
       'Assignments': {
@@ -82,7 +83,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1> syllabi... </h1>
+        <h1> syllabyte... </h1>
+        <TaskTable state={1}/>
       </header>
     </div>
   );

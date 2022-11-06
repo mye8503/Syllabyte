@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -12,36 +12,51 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-function FormRow() {
-  return (
-    <React.Fragment>
-      <Grid item xs={4}>
-        <Item>Item</Item>
-      </Grid>
-      <Grid item xs={4}>
-        <Item>Item</Item>
-      </Grid>
-      <Grid item xs={4}>
-        <Item>Item</Item>
-      </Grid>
-    </React.Fragment>
-  );
-}
+export function TaskTable({state}) {
+  const [assignmentInfo, setAssignmentInfo] = useState([{
+    course: "Aps360",
+    assignment: "Lab 4",
+    dueIn: "7 days",
+    state: '1'
+  },
+  {
+    course: "Aps360",
+    assignment: "Progress report 1",
+    dueIn: "5 days",
+    state: 1
+  },
+  {
+    course: "Aps360",
+    assignment: "Lab 3",
+    dueIn: "1 days",
+    state: 2
+  },
+  {
+    course: "ECE344",
+    assignment: "Lab 4",
+    dueIn: "8 days",
+    state: 1
+  },
+  {
+    course: "ECE344",
+    assignment: "Quiz 2",
+    dueIn: "5 days",
+    state: 1
+  },]);
 
-export default function NestedGrid() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={1}>
-        <Grid container item spacing={3}>
-          <FormRow />
-        </Grid>
-        <Grid container item spacing={3}>
-          <FormRow />
-        </Grid>
-        <Grid container item spacing={3}>
-          <FormRow />
-        </Grid>
-      </Grid>
-    </Box>
-  );
-}
+    {
+      assignmentInfo.filter(task => task.state == 1).map(info => (
+        <React.Fragment>
+          <Grid item xs={12}>
+            <Item>info.assingment + " " + info.course + " " + info.dueIn</Item>
+          </Grid>
+        </React.Fragment>
+      )
+        
+        
+      )
+    }
+
+  )}
+

@@ -3,11 +3,9 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.12",
-<<<<<<< HEAD
-    "appwrite": "^10.1.0"
-=======
+    "@mui/styled-engine-sc": "^5.10.6",
     "appwrite": "^10.1.0",
-    "firebase": "^9.13.0"
->>>>>>> ee05df2 (firebase)
+    "firebase": "^9.13.0",
+    "styled-components": "^5.3.6"
   }
 }
