@@ -155,8 +155,6 @@ def setPriorities(course_name, priority):
 
             if(type(item) != dict):
                 if(course == course_name):
-                    if(item == len(course_struct)):
-                        return
                     course_info[course]['priority'] += priority
                 if(course_struct['priority'] > priority_num):
                     course_info[course]['priority'] -= priority
