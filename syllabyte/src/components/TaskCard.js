@@ -26,8 +26,9 @@ export default function TaskCard() {
         <div class="container">
         <h4><b>John Doe</b></h4>
         <p>Architect & Engineer</p>
+        </div>
     </div>
-    <div>
+    {/* <div>
 
       <Box
         component="form"
@@ -48,6 +49,6 @@ export default function TaskCard() {
           <button onClick={handleSubmission}>Submit</button>
         </div>
       </div>
-    </div>
+    </div> */}
   );
 }
