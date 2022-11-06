@@ -194,6 +194,6 @@ while(True):
     coursename, priority = input('set priority for a course - (format) course name (ECE344, ECE345, ECE346) priority (1, 0, -1) :     ').split()
     getOrderedByRank(coursename, priority)
 
-    wait = input('press enter to refresh')
+    wait = input('press 1 to refresh')
     time.sleep(int(wait))
 
