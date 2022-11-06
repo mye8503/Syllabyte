@@ -3,6 +3,11 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.12",
+<<<<<<< HEAD
     "appwrite": "^10.1.0"
+=======
+    "appwrite": "^10.1.0",
+    "firebase": "^9.13.0"
+>>>>>>> ee05df2 (firebase)
   }
 }

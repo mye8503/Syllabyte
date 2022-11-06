@@ -1,12 +1,7 @@
 from pprint import PrettyPrinter
 from django.shortcuts import render
-<<<<<<< HEAD
 from rest_framework import viewsets
-=======
 from datetime import datetime
-import json
->>>>>>> f734861 (made algo using dummy data)
-
 class ListView(viewsets.ModelViewSet):
     pass
     # create a serializer class and
@@ -105,7 +100,6 @@ def calculateRank():
                         print(type(sub_item['percentage']))
                     else:
                         sub_item['rank'] = 0
-                    print("rank: ", sub_item['rank'], "for ", item)
 
             
                 

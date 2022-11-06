@@ -1,8 +1,8 @@
-import React,{Component, useState} from "react";
+import React,{Component} from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
-export default function CourseAndUpload() {
+export default function TaskCard() {
   const [selectedFile, setSelectedFile] = useState();
  
   const changeHandler = (event) => {
@@ -21,7 +21,14 @@ export default function CourseAndUpload() {
     //post to backend
   };
   return (
+    <div class="card">
+        <img src="img_avatar.png" alt="Avatar" style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+    </div>
     <div>
+
       <Box
         component="form"
         sx={{
