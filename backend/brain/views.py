@@ -2,7 +2,7 @@ from django.shortcuts import render
 from datetime import datetime
 import firebase_admin 
 import json
-from rest_framework import Response
+from rest_framework import response
 import heapq as hp
 
 # Dummy data
@@ -109,9 +109,12 @@ def calculateRank():
                         sub_item['rank'] = 0
 
 # get ordered assignments in a list
-def getOrderedByRank(request, course_name='nil', priority='nil'):
-    if(course_name != 'nil'):
+def getOrderedByRank(course_name='ECE344', priority='nil', state=2, assignment_name='Lab', number = 1):
+    if(priority != 'nil'):
         setPriorities(course_name, priority)
+
+    if(state != 'nil'):
+        setStates(course_name, assignment_name, state)
 
     heap = []
     calculateRank()
@@ -137,7 +140,7 @@ def getOrderedByRank(request, course_name='nil', priority='nil'):
     heap = sorted(heap, key=lambda x: x[0], reverse=True)
     heap = json.dumps(heap)
 
-    return Response(heap)
+    return response(heap)
 
 def setPriorities(course_name, priority):
     if(priority > 1 or priority < -1):
@@ -156,10 +159,17 @@ def setPriorities(course_name, priority):
                 if(course_struct[item] > priority_num):
                     course_struct[item] -= priority
 
-def setStates(request, course_name, assignment_name, state):
+def setStates(course_name, assignment_name, state):
     if(state > 3 and state < 1):
-        return Response('invalid state')
+        return response('invalid state')
     
-    course_info[course_name][assignment_name]['state'] = state
+    for course in course_info:
+        course_struct = course_info[course]
+        if(course == course_name):
+            for item in course_struct:
+                item = course_struct[item]
+                course_struct[item][assignment_name]['state'] = state
 
-    return Response('success')
+    return response('success')
+
+getOrderedByRank()
