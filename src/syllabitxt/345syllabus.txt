@@ -1,0 +1,131 @@
+UofToronto{ECE 345{Fall, 2022 1 Course Information
+Course Information
+ECE 345 Algorithms and Data Structures
+University of Toronto
+Dept. of Electrical and Computer Engineering
+Fall Semester, 2022
+Course Description
+Design and analysis of algorithms and data structures that are essential to engineers in every aspect of the computer
+hardware and software industry. Topics include recurrences, asymptotics, summations, sorting, search trees and
+balanced search trees, amortized analysis, hash functions, dynamic programming, greedy algorithms, basic graph
+algorithms, minimum spanning trees, shortest paths, introduction to NP completeness and new trends in algorithms
+and data structures.
+Learning Objectives
+Upon successful completion of this course, you should be able to explain the systematic methods of eciently
+organizing and accessing data in data structures and algorithms, identify the properties and structural patterns in
+data structures,apply abstract data types to the design of data structures, analyze algorithms using a mathematical
+notation, perform comparative analysis of the typical data structures and algorithms, design and analyze recursive
+algorithms, write code in pseudocode and high-level programming languages for the implementation of various data
+structures and algorithms.
+Sta
+Section 1: Dr. Sidi Mohamed Beillahi, BA3242 ( sm.beillahi@utoronto.ca ). Oce hours: Wed 3:30-4:30pm
+(BA3242 or via Zoom), or by appointment.
+Section 2: Dr. Malik Khan ( mmurtaza.khan@utoronto.ca ). Oce hours: Mon 9-10am via Zoom, or by appointment.
+Section 3: Dr. Zissis Poulos ( zpoulos@eecg.toronto.edu ). Oce hours: Fri 4:30-5:30pm via Zoom, or by appoint-
+ment.
+The head TA for this course is Panagiotis Michalopoulos ( p.michalopoulos@mail.utoronto.ca ).
+The tutorial TAs for this course are Eric Keilty ( eric.keilty@mail.utoronto.ca ), Srisht Fateh Singh
+(srishtfateh.singh@mail.utoronto.ca ), and Xun Deng ( xun.deng@mail.utoronto.ca ).
+ECF Course Email: ece.algorithms+345@gmail.com (Course email to be used for general inquiries like questions
+on material and remarking. This email address goes to TAs only and not to the instructors)
+Course Piazza link: https://piazza.com/utoronto.ca/fall2022/ece345 (Piazza page to be used for questions on the
+homeworks. Announcements will be made on Quercus. )
+Zoom link for oce hours: https://utoronto.zoom.us/j/89949927349
+Lecture Schedule
+LEC0101 (Dr. Beillahi): Mon (5pm-6pm, BA1130), Wed (5pm-6pm, BA1130), and Thu (5pm-6pm, BA1130).
+LEC0102 (Dr. Khan): Mon (10am-11am, GB220), Wed (10am-11am, GB220), and Thu (10am-11am, GB220).
+LEC0103 (Dr. Poulos): Mon (3pm-4pm, MP103), Wed (3pm-4pm, MP103), and Fri (3pm-4pm, MP103).
+Each student is registered in one of the ve tutorial sections.
+TUT0101 (Panagiotis): Mon (3pm-5pm, SF3202).
+TUT0102 (Panagiotis): Fri (1pm-3pm, SF3202).
+TUT0103 (Eric): Fri (10am-12am, BA1230).
+TUT0104 (Xun): Fri (10am-12pm, BA1200).UofToronto{ECE 345{Fall, 2022 2 Course Information
+TUT0105 (Srisht): Fri (1pm-3pm, GB220).
+In tutorials, questions will be answered about the lecture material, address homework material and solve sample
+pre-announced problems from the textbook. If you would like your TA to go over specic problems, please let them
+know in advance via the ECF course email so they can prepare (please include the course code and tutorial section
+in the subject).
+Important Dates
+Due
+Homework 1 Friday, September 30th, 5pm
+Homework 2 Friday, October 14th, 5pm
+Homework 3 Friday, October 28th, 5pm
+Homework 4 Friday, November 25th, 5pm
+Homework 5 Thursday, December 8th, 5pm
+Midterm To Be Announced...
+Textbook and Class Contents
+The required textbook for this course is T. Cormen, C. Leiserson, R. Rivest, C. Stein (CLRS), \ Introduction to
+Algorithms ," McGraw Hill 2009 (3rd edition). CLRS is a well-written comprehensive textbook used by most major
+universities. No other text is required and no lecture notes will be distributed.
+In this class we will cover the following material:
+•Background: asymptotics, recurrences, combinatorics, randomization, graphs and trees (Chapters 1 : : :5, Appen-
+dices A, B and C)
+•Sorting: quicksort and analysis, heapsort and analysis, other sorting methods, lower bounds in sorting and
+selection in linear time (Chapters 6 : : :9)
+•Binary Search trees, Red-Black trees, Amortized Analysis, Splay trees, Hashing (Chapters 10 : : :13, 17)
+•Dynamic Programming and Greedy Algorithms (Chapters 15 and 16)
+•Basic graph algorithms (breadth-rst search, depth-rst search) (Chapter 22)
+•Minimum Spanning Trees and Single Source Shortest Paths (Chapters 23 and 24)
+•An Introduction to Maximum Flow (Chapter 26)
+•Introduction to theory of computation and NP-Completeness (Chapter 34)
+•Introduction to Blockchain Technologies (Handout)
+Course Webpage
+All ocial announcements will be posted on Quercus ( q.utoronto.ca ).It is your own responsibility to check it at
+regular intervals, i.e. once per day . It is strongly recommend to select \Notify immediately" for course announcements
+in your account notication settings. This will forward all announcements to your university email. Questions on
+the material ( i.e.,lectures, exams, tutorials, etc) should be asked during tutorial sessions, on Piazza, or sent to the
+ECF course email: ece.algorithms+345@gmail.com .
+On Quercus you will nd weekly reading assignments from CLRS and supplementary readings, homework assign-
+ments, sample problem solutions, previous exams and other useful resources, including the lecture videos from Fall
+2020. All homeworks will be submitted via Quercus.
+COVID-19 Measures
+For the Fall 2022 term all course activities will be in-person. As such, you must abide by the University of Toronto's
+vaccination and face mask policy in order to attend in-person lectures and tutorial. Links containing relevant
+information have been provided below:
+•COVID-19 FAQ : https://www.viceprovoststudents.utoronto.ca/covid-19/
+•Vaccination Policy : https://www.utoronto.ca/utogether/vaccines
+•Face Mask Policy : https://www.utoronto.ca/utogether/masksUofToronto{ECE 345{Fall, 2022 3 Course Information
+Face Mask Requirements During Lecture/Tutorials : The University's mandatory mask requirement is cur-
+rently suspended. However, the use of a medical mask in high-density indoor spaces when physical distancing is not
+possible is strongly encouraged. The University is a mask-friendly environment, and we ask everyone to respect each
+other's decisions, comfort levels, and health needs.
+Course Requirements and Grading Scheme
+The nal grade for this class has three components:
+•homeworks: There will be ve homeworks you will do in groups of 2-3 students. You can switch groups between
+homeworks but you will receive the group grade each time. More details about proper homework submission
+are on Quercus. Deadlines for homeworks are nal! Absolutely no late homework will be accepted. Homeworks
+account for 25% of your grade (5% each).
+•midterm exam: There will be one midterm of two hours and it is open CLRS book. The midterm accounts
+for 35% of the grade.
+•nal exam: Open CLRS book, two and half hours and 40% of the grade.
+Exam dates and rooms will be announced at a later time. Exam material will be simpler versions of the problems
+you will see in the homework. Exam type material will be practiced regularly at tutorials.
+Remarking: You have exactly seven (7) working days to submit your work (homework or midterm) for remarking
+from the time marks are released. There are NO exceptions to this rule and no late homework will be remarked . To
+request a remark, state the problem number(s) submitted for remarking, the reason you believe you were marked
+unfairly, and the name and email address of the group member(s) who should be contacted for clarications in an
+email, attach a pdf of your homework and any TA feedback received (e.g. annotations on the homework, rubrics on
+Quercus, etc.), and send to the ECF course email ( ece.algorithms+345@gmail.com ). If there is a legitimate reason
+for a late assignment or exam absence (illness, etc.), please email the ECF course email. Keep in mind that ocial
+documentation (doctor letter, etc) is required for an exemption. When a homework or midterm is submitted for
+remarking, the entire document may be regraded (not just the sections you believe were marked unfairly) and it is
+possible you will receive a lower mark than before if we determine the initial grader was too generous.
+Cheating Policy
+Cheating is against \fair{play" and will not be tolerated under any circumstances. While the pressures of many
+classes, homeworks, work and/or extracurricular activities can be overwhelming, this is never an excuse for copying
+solutions from others. The University holds among its highest principles the notion of academic freedom
+and integrity. Cheaters will face the University's disciplinary committee as well as receive a failing
+grade in this course. If you think that there is an issue that inuences your performance in the class then talk to
+the instructor.
+How to Get the Most out of this Course
+You are urged to read the textbook sections posted in the weekly reading assignments, as it is quite thorough, with
+many examples and with good motivating discussions and intuitions. The internet is full of additional scientic and
+historical material. Do a lot of practice problems from the book. Read the course webpage regularly and email the
+TAs if you have any questions. Attend lectures, tutorials and oce hours. Keep up with the pace of the class. Make
+sure you understand the solution to all homework questions, even if someone else in your group completed it.
+Copyright and FIPPA
+Notice of video recording and sharing (Download permissible; re-use prohibited) Course videos and materials belong
+to your instructor, the University, and/or other sources, depending on the specic facts of each situation, and are
+protected by copyright. In this course, you are permitted to download session videos and materials for your own
+academic use, but you should not copy, share, or use them for any other purpose without the explicit permission of
+the instructor.

@@ -1,0 +1,188 @@
+ECE302H1F 202 2 - Probability and  Applications  
+FALL 202 2 
+ 
+Description:  Engineers  and scientists  deal  with  systems,  devices,  and environments  that  contain  
+unavoidable elements of randomness. Probability theory is a mathematical tool that allows logical ways  
+to reason about knowledge and uncertainty. This course introduces 3rd - and 4th -year electrical and  
+computer  engineering  students  to basic concepts  in probability  theory.  
+ 
+ECE302  2020  Learning  Outcomes  
+• Understand  the basic  concepts  of probability,  random  variables,  probability  distribution,  and 
+joint probability  distribution.  
+• Acquire  basic  knowledge  of discrete  and continuous,  univariate,  and multi -variate  probability  
+distribution  functions.  
+• Have  an appreciation  for probabilistic  analysis  techniques.  
+ 
+Textbook : A. Leon -Garcia , Probability  and Random  Processes  for Electrical  Engineering , Third  Edition,  
+Addison  Wesley,  ISBN -13: 978-0-13-147122 -1. 
+ 
+Instructor s: Parham Aarabi ; Email:  p (AT) arh.am                                                                                                                                                                                                                                                              
+                        http://p.arh.am/  
+                        Ervin Sejdić;  Email:  ervin.sejdic  (AT)  utoronto.ca  
+                                                                                                                                                                      https://www.ece.utoronto.ca/peo ple/sejdic -e/  
+ 
+Course  Website : The course  will be administered  via Quercus.  Communications  with  the instructor  and 
+Teaching  Assistants,  announcements,  on-line course  notes,  detailed  course  notes,  assigned  homework,  homework  
+solutions,  evaluations  (midterms  and finals),  and grades,  and will be posted  here.  Please  ensure  that you always  
+have access to the Quercus based ECE302 page.  There is only one ECE302 web page .  
+ 
+Evaluation: There will be two midterms and a final examination . The composition of the  final ECE302  
+mark  is as follows:  
+ 
+Final  Examination  50% 
+Midterm  Test  1 (Sep. 29th) 25% 
+Midterm  Test  2 (Nov. 3rd) 25% 
+Total  100%  
+ 
+Note:  
+1. Petitions  related  to any evaluation  must  be submitted  online  through  the Term -Work  Petition  
+system:  http://uoft.me/termworkpetition   
+2. Midterm  tests  will be 60 minutes  long.   
+3. The final examination will be a 2 ½ hours long (150 minutes  long ) exam . 
+ 
+ 
+ 
+ 
+ 
+ Coverage  
+ 
+Week  First  Nominal  Lecture  Second  Nominal  Lecture  Third  Nominal  Lecture  
+WK 0   Course  Introduction,  Random  
+Experiments, Relative  
+Frequency  (ch 1.3, 2.1) 
+WK1  
+12/09- 
+16/09 Events, Axiomatic Definition of  
+Probability, Properties of  
+Probability  (ch 2.2) Properties of Probability,  
+Specifying Probability: Discrete  
+and Continuous  (ch 2.2) Computing Probability by  
+Counting  (ch 2.3) 
+WK2  
+19/09 – 
+23/09 Conditional  Probability  (ch 2.4) Total  Probability,  Bayes'  Rule  
+(ch. 2.4)  Independence  of Events  (ch. 
+2.5) 
+WK3  
+26/09- 
+30/09 Sequential Experiments,  
+Independent Bernoulli Trials,  
+Binomial, Geometric Probability  
+Laws  (ch 2.6)  Random Variables, Discrete  RVs, 
+PMF  (ch 3.1, 3.2)  Expected Value: Discrete,  
+Expected Value of g(X) (ch  3.3) 
+Midterm  1 
+Coverage:  Chapter  2; Sections:  2.1, 2.2.,  2.3, 2.4, 2.5, 2.6 
+Sep. 29th, 2022  
+WK4  
+02/10 
+07/10 Variance,  Conditional  PMF  and 
+Expectation  (ch 3.3, 3.4) Important  Discrete  RVs:  
+Uniform,  Bernoulli,  Binomial  
+(ch. 3.5)  Important  Discrete  RVs:  
+Geometric,  Poisson  (ch 3.5) 
+WK5  
+10/10 – 
+14/10 10/10 Thanksgiving  holiday  Cumulative  distribution  
+Function  CDF (ch 4.1) Types  of RVs, PDF,  (ch 4.1, 4.2) 
+WK6  
+17/10- 
+21/10 Conditional CDF and PDF (ch  4.2) Expected  Values  (ch 4.3) Important  Continuous  RVs:  
+Uniform, Exponential,  
+Gaussian  (ch 4.4) 
+Wk7  
+24/10- 
+28/10 Gaussian, Gamma, Cauchy (ch  
+4.4),  Function  of RV (ch 4.5) Function  of RV (ch 4.5) Function of RV, Markov and  
+Chebyshev Inequalities (ch  
+4.5, 4.6)   
+Midterm  2 
+Coverage: Chapter  3; Sections:  3.1, 3.2, 3.4, 3.5 
+Chapter  4; Sections:  4.1, 4.2, 4.3, 4.4, 4.5, 4.6 
+Nov. 3rd, 2022  
+WK8  
+31/10 –  
+04/11 Characteristic  Function  (ch 4.7) Two  RVs,  Joint PMF  (ch 5.1, 5.2) Marginal  PMF,  Joint  CDF,  
+Marginal  CDF (ch. 5.3) 
+Fall Semester  Break  
+07/11-11/11 
+WK9  
+14/11 – 
+18/11 Joint  PDF,  Marginal  PDF (ch 5.4) Joint  CDF/PDF,  Two  Mixed  RVs 
+(ch. 5.3, 5.4)  Independence  of Two  RVs (ch. 
+5.5) 
+WK10  
+21/11- 
+25/11 Expected  Value  of a Function  of 
+Two  RVs,  Correlation,  
+Covariance  (ch. 5.6) Conditional  Probability  and 
+Density  with  Two  RVs (ch. 5.7) Total  Probability,  Conditional  
+Expectation  (ch. 5.7) 
+WK11  
+28/11- 
+02/12 One  Function  of Two  RVs (ch 
+5.8) Transformation  of Two  RVs (ch 
+5.8) Two  Jointly Gaussian  RVs (ch 
+5.9) 
+WK12  
+05/12- 
+07/12 Sum  of RVs,  Sample  Mean, Law  
+of Large  Numbers  (ch 7.1, 7.2) Central  Limit  Theorem  (ch 7.3)  
+Final  Examination  
+Coverage:  Chapter  2,3,4,5,  7 ALL pertinent  Sections  
+ 
+ 
+Note:  The lecturing  schedule  is provided  for information  purposes  only . All specific  details  are subject  to 
+change  (with  notice).  
+ 
+ 
+Homework  Problems  / Readings  
+ 
+While  ECE302  is one of the most  interesting  and useful  courses  in electrical  and computer  engineering,  it 
+is also a challenging upper -year course. To do well in this course you must keep up to date with the     
+class schedule . The best way to accomplish this is to practice , through the assigned homework  and other 
+exercise problems. In Fall 20 21 homework problems have been pre -announced, and their  solutions 
+have been posted  one week after the tutorial session . Thus, homework solutions will not be collected, 
+but you are required to  work  out the problems  whe n the pertinent  material  is covered  and before  you 
+consult  the solutions.  
+ 
+ 
+ECE302  Fall 2022 Weekly Homework  Assignments  
+Assignment  #1: 
+1.1, 1.2, 1.5, 2.2, 2.4, 2.5, 2.9, 2.23,  2.24  
+Assignment  #2: 
+2.36,  2.38,  2.49,  2.54,  2.63,  2.73,  2.74,  2.75,  2.76,  2.77  Assignment  #3: 
+2.82,  2.85,  2.92,  2.95,  2.97,  2.99,  2.101,  2.104,  2.126,  2.128  
+Assignment  #4: 
+3.8, 3.10,  3.12.  ab, 3.13,  3.17,  3.25.b,  3.27,  3.31,  3.36.ab,  3.41,  3.43  
+Assignment  #5: 
+3.44,  3.49,  3.52,  3.53,  3.56,  3.57,  3.63,  3.65,  3.66,  4.5, 4.6, 4.7 
+Assignment  #6: 
+4.12,  4.16,  4.17,  4.19,  4.27.ab,  4.35,  4.38,  4.39,  4.41,  4.48,  4.54,  4.56  
+Assignment  #7: 
+4.62,  4.63,  4.64,  4.67,  4.68,  4.69  
+Assignment  #8: 
+4.77,  4.79,  4.82,  4.85,  4.88,  4.91,  4.99,  4.100,  4.102,  4.104,  4.105,  4.106  
+Assignment  #9: 
+5.8 (a  - e), 5.9, 5.11,  5.14,  5.17,  5.26,  5.31,  5.33  
+Assignment  #10:  
+5.40,  5.41,  5.42,  5.45,  5.48,  5.56,  5.57,  5.58,  5.63  5.64,  5.68,  5.76,  5.79,  5.80  
+Assignment  #11:  (optional  – will not be discussed  in a tutorial  session)  
+5.81(a,  b), 5.84,  5.86,  5.88,  5.93,  5.95,  5.96,  5.98,  5.99,  5.102,  5.105,  5.111,  5.113.  
+Assignment  #12:  (optional  – will not be discussed  in a tutorial  session)  
+7.1, 7.5, 7.8, 7.9, 7.16,  7.17,  7.23,  7.26,  7.29  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
