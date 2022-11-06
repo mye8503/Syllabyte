@@ -2,10 +2,10 @@ from django.shortcuts import render
 from datetime import datetime
 import firebase_admin 
 import json
-from firebase_admin import firestore
+from rest_framework import Response
 import heapq as hp
 
-# Create your views here.
+# Dummy data
 course_info = {
         'APS360': {
             'priority': 1,
@@ -83,6 +83,7 @@ course_info = {
         }
     }
 
+# calulate rank for each assignment
 def calculateRank():
     priority = 0
     for course in course_info:
@@ -106,10 +107,14 @@ def calculateRank():
                         
                     else:
                         sub_item['rank'] = 0
-    #return render(request, 'index.html', {'course_info': course_info})
 
-def getOrderedByRank():
+# get ordered assignments in a list
+def getOrderedByRank(request, course_name='nil', priority='nil'):
+    if(course_name != 'nil'):
+        setPriorities(course_name, priority)
+
     heap = []
+    calculateRank()
 
     for course in course_info:
         course_struct = course_info[course]
@@ -130,8 +135,31 @@ def getOrderedByRank():
                     }
                     heap.append((assignment_info['rank'], assignment_info))
     heap = sorted(heap, key=lambda x: x[0], reverse=True)
-    print(heap)
-    #return render(request, 'index.html', {'course_info': course_info})
+    heap = json.dumps(heap)
 
-calculateRank()
-getOrderedByRank()
+    return Response(heap)
+
+def setPriorities(course_name, priority):
+    if(priority > 1 or priority < -1):
+        return ('invalid priority')
+    priority_num = course_info[course_name]['priority']
+    for course in course_info:
+        course_struct = course_info[course]
+        for item in course_struct:
+            item = course_struct[item]
+
+            if(type(item) != dict):
+                if(course == course_name):
+                    if(item == len(course_struct)):
+                        return
+                    course_struct[item] += priority
+                if(course_struct[item] > priority_num):
+                    course_struct[item] -= priority
+
+def setStates(request, course_name, assignment_name, state):
+    if(state > 3 and state < 1):
+        return Response('invalid state')
+    
+    course_info[course_name][assignment_name]['state'] = state
+
+    return Response('success')
