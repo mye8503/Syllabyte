@@ -17,7 +17,7 @@ export function TaskTable({state}) {
     course: "Aps360",
     assignment: "Lab 4",
     dueIn: "7 days",
-    state: '1'
+    state: 1
   },
   {
     course: "Aps360",
@@ -42,21 +42,76 @@ export function TaskTable({state}) {
     assignment: "Quiz 2",
     dueIn: "5 days",
     state: 1
-  }]);
-
-  return (
+  },
+  {
+    course: "ECE344",
+    assignment: "Quiz 1",
+    dueIn: "2 days",
+    state: 2
+  },
+  {
+    course: "ECE345",
+    assignment: "Assignment 1",
+    dueIn: "1 days",
+    state: 2
+  },
+  {
+    course: "APS360",
+    assignment: "Lab 2",
+    dueIn: "0 days",
+    state: 3
+  }
+]);
+  if (state != 3){
+    return (
+      <div>
+        <Grid container rowSpacing={2}>
+        {assignmentInfo && 
+          assignmentInfo.filter((task) => task.state === state).map(info => (          
+              
+               <Grid item rowSpacing={3} xs={12}>
+                <Item>
+                {
+                info? `${info.assignment} ${info.course} ${info.dueIn}` : ''} 
+                </Item>
+                
+              </Grid>
+           
+        ))}
     
-      assignmentInfo.filter(task => task.state === 1).map(info => (
-        <React.Fragment>
-          <Grid item xs={12}>
-            <Item>info.assingment + " " + info.course + " " + info.dueIn</Item>
-          </Grid>
-        </React.Fragment>
-      )
+        </Grid>
+          
+  
+      </div>
+  
+    )
+  
+  }
+  else{
+    return(
+      <div>
+      <Grid container rowSpacing={2}>
+      {assignmentInfo && 
+        assignmentInfo.filter((task) => task.state === 1).map(info => (          
+            
+             <Grid item rowSpacing={3} xs={12}>
+              <Item>
+              {
+              info? `${info.assignment} ${info.course}` : ''} 
+              </Item>
+              
+            </Grid>
+         
+      ))}
+  
+      </Grid>
         
-        
-      )
-    
 
-  )}
+    </div>
+
+  )
+    
+  }
+ 
+}
 
