@@ -95,8 +95,10 @@ function App() {
   return (
 
     <div className="App">
+      
       <header className="App-header">
         <h1> syllabyte </h1>
+        <CourseAndUpload style={{textAlign:"right", flexDirection:"row", justifyContent:"flex-end" }}/>
         <Grid container spacing={2}>
           <Grid item xs={4}>
           <h2>To Do</h2>
