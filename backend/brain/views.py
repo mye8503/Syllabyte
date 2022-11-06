@@ -4,6 +4,7 @@ import firebase_admin
 import json
 from rest_framework import response
 import heapq as hp
+import time
 
 # Dummy data
 course_info = {
@@ -82,7 +83,7 @@ course_info = {
             }
         }
     }
-
+heap = []
 # calulate rank for each assignment
 def calculateRank():
     priority = 0
@@ -139,11 +140,13 @@ def getOrderedByRank(course_name='ECE344', priority='nil', state='nil', assignme
                     heap.append((assignment_info['rank'], assignment_info))
     heap = sorted(heap, key=lambda x: x[0], reverse=True)
     printAll(heap)
-    return response(heap)
+    
 
 def setPriorities(course_name, priority):
+    priority = int(priority)
     if(priority > 1 or priority < -1):
         return ('invalid priority')
+
     priority_num = course_info[course_name]['priority']
     for course in course_info:
         course_struct = course_info[course]
@@ -154,9 +157,9 @@ def setPriorities(course_name, priority):
                 if(course == course_name):
                     if(item == len(course_struct)):
                         return
-                    course_struct[item] += priority
-                if(course_struct[item] > priority_num):
-                    course_struct[item] -= priority
+                    course_info[course]['priority'] += priority
+                if(course_struct['priority'] > priority_num):
+                    course_info[course]['priority'] -= priority
 
 def setStates(course_name, assignment_name, state):
     if(state > 3 and state < 1):
@@ -180,12 +183,19 @@ def setStates(course_name, assignment_name, state):
 def printAll(data_struct):
     for i in range(len(data_struct)):
         print("--------------------------")
-        print(data_struct[i][1]['course'], "-->", data_struct[i][1]['assignment'], "due: ", data_struct[i][1]['dueIn'], "ranked: ", data_struct[i][1]['rank'])
+        print(data_struct[i][1]['course'], "-->", data_struct[i][1]['assignment'], "due in: ", data_struct[i][1]['dueIn'], "days ", "ranked: ", data_struct[i][1]['rank'])
         print("--------------------------")
         print("            ^")
         print('            |')
         print('            |')
 
-# while(True):
-#     print('your tasks in order of priority:')
-getOrderedByRank()
+while(True):
+    print('your tasks in order of priority:')
+    getOrderedByRank()
+
+    coursename, priority = input('set priority for a course - (format) course name (ECE344, ECE345, ECE346) priority (1, 0, -1) :     ').split()
+    getOrderedByRank(coursename, priority)
+
+    wait = input('press enter to refresh')
+    time.sleep(int(wait))
+
