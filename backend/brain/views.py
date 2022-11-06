@@ -109,7 +109,7 @@ def calculateRank():
                         sub_item['rank'] = 0
 
 # get ordered assignments in a list
-def getOrderedByRank(course_name='ECE344', priority='nil', state=2, assignment_name='Lab', number = 1):
+def getOrderedByRank(course_name='ECE344', priority='nil', state='nil', assignment_name='nil', number = 'nil'):
     if(priority != 'nil'):
         setPriorities(course_name, priority)
 
@@ -138,8 +138,7 @@ def getOrderedByRank(course_name='ECE344', priority='nil', state=2, assignment_n
                     }
                     heap.append((assignment_info['rank'], assignment_info))
     heap = sorted(heap, key=lambda x: x[0], reverse=True)
-    heap = json.dumps(heap)
-
+    printAll(heap)
     return response(heap)
 
 def setPriorities(course_name, priority):
@@ -167,9 +166,26 @@ def setStates(course_name, assignment_name, state):
         course_struct = course_info[course]
         if(course == course_name):
             for item in course_struct:
+                name = item
                 item = course_struct[item]
-                course_struct[item][assignment_name]['state'] = state
+                for sub_item in item:
+                    if(sub_item == assignment_name):
+                        item[sub_item]['state'] = state
+                        return response('state changed')
 
-    return response('success')
+    
+    return response('failed')
 
+# print all tasks
+def printAll(data_struct):
+    for i in range(len(data_struct)):
+        print("--------------------------")
+        print(data_struct[i][1]['course'], "-->", data_struct[i][1]['assignment'], "due: ", data_struct[i][1]['dueIn'], "ranked: ", data_struct[i][1]['rank'])
+        print("--------------------------")
+        print("            ^")
+        print('            |')
+        print('            |')
+
+# while(True):
+#     print('your tasks in order of priority:')
 getOrderedByRank()
